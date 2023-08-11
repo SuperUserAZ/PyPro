@@ -1,53 +1,101 @@
 body {
-    background: whitesmoke;
-    margin: 0 auto;
+   
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  margin: 0 auto;
 }
 
 .header {
-    width: 100vw;
-    height: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #1434A4;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
+   width: 100vw;
+   height: 150px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #1434A4;
+   display: flex;
+   justify-content: center;
+   border-radius: 5px;
 }
 
 .innerheader {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #CCCCFF;
-    border-radius: 5px;
-    text-align: center;
+   width: 96vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #CCCCFF;
+   border-radius: 5px;
+   text-align: center;
 }
 
 #logo {
-    display: inline-block;
-    font-size: 2em;
+   display: inline-block;
+   font-size: 2em;
 }
 
 .wrapper {
-  width: 100wv;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  outline: red;
-  padding-top: 10px;
-  padding-left: 15px;
+ width: 100wv;
+ height: 100vh;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: flex-start;
+ outline: red;
+ padding-top: 10px;
+ padding-left: 15px;
 }
 
-.box {
-  width: 400px;
-  background: #CCCCFF;
-  height: 500px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
+.wrapper div:nth-child(odd) {
+ height: 95vh;
+ flex-basis: 35%;
+}
+
+.wrapper div:nth-child(even) {
+ height: 40vh;
+}
+
+#box2 form {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ border-radius: 8px;
+ box-shadow: 0 5px 45px rgba(255, 255, 255, .5); 
+ flex-direction: column;
+}
+
+.box, form {
+ width: 400px;
+ background: #CCCCFF;
+ height: 250px;
+ padding-bottom: 10px;
+ border-radius: 5px;
+}
+
+form {
+ padding-top: 50px;
+ height: 40vh;
+}
+
+input, button {
+ width: 300px;
+ height: 30px;
+ margin: 10px;
+ border: 2px solid #fcb045;
+ border-radius: 5px;
 }
 
 
-/*-----------ABOUT------------*/
+
+.sub_text {
+ font-size: .8em;
+ padding: 0;
+ margin: 0;
+}
+
+button {
+ width: 45%;
+}
+
+/*------------Profile---------------*/
+.profile-wrapper{
+  width: 96vw;
+  height: 96vh;
+  
+}
