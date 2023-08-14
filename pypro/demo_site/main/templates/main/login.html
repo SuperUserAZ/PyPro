@@ -5,7 +5,29 @@
 {% endblock %}
 
 {% block bodypage %}
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci est distinctio, cum magnam ad asperiores? Aspernatur esse illum voluptates adipisci aperiam officiis, labore consectetur non sunt fugit maiores sequi natus alias iste nihil eos commodi quisquam, unde nesciunt eius vitae?</p><br>
-    
+<div class="login-box">
+    <form method="post">
+        <h1>Login</h1>
+
+        <div class="input-box">
+            <input type="email" placeholder="  E-mail" required enabled>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="  Password" required enabled>
+        </div>
+
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#" style="text-decoration: none;">Forgot password?</a>
+        </div>
+
+        <center><button type="submit"><span>Login</span></button></center>
+
+        <div class="register-link">
+            <p>Don't have an account?<a href="/demo_site/main/templates/main/signup.html" style="text-decoration: none;">Sign Up</a></p>
+        </div>
+    </form>
+</div>    
 {% endblock %}
 
