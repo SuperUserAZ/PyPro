@@ -2,27 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-    <title>
-        {% block title %}{% endblock %}
-    </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <title>Document</title>
+  <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <header id="head">
-        <section class="header">
-            <div class="innerheader">
-                <span id="logo">Ferrum Capital</span>
-            </div>
-        </section>
-    </header>
-    {% block profilebody %}
-        
-    {% endblock %}
-
+  <header id="head">
+    <section id="logo-box">
+      <span class="logo-text">Ferrum Capital</span>
+    </section>
+  </header>
+  <main>
     {% block bodypage %}
-        
     {% endblock %}
+  </main>
 </body>
 </html>
+
