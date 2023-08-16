@@ -25,9 +25,8 @@
         <center><button type="submit"><span>Login</span></button></center>
 
         <div class="register-link">
-            <p>Don't have an account?<a href="/demo_site/main/templates/main/signup.html" style="text-decoration: none;">Sign Up</a></p>
+            <p>Don't have an account?<a href="{% url 'authorization' %}" style="text-decoration: none;">Sign Up</a></p>
         </div>
     </form>
 </div>    
 {% endblock %}
-
