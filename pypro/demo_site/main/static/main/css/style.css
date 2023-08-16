@@ -1,101 +1,232 @@
-body {
-   
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body, main{
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);    
 }
 
-.header {
-   width: 100vw;
-   height: 150px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   background-color: #1434A4;
-   display: flex;
-   justify-content: center;
-   border-radius: 5px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093E9;
+
+}
+  
+#head {
+    width: 100%;
+    height: 180px;
+    padding: 10px 0;
+    background: #B5FFFC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.innerheader {
-   width: 96vw;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #CCCCFF;
-   border-radius: 5px;
-   text-align: center;
+#logo-box {
+    width: 95vw;
+    height: 180px;
+    margin: 0 auto;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);    
+    border-radius: 5px;
+    text-align: center;
 }
 
-#logo {
-   display: inline-block;
-   font-size: 2em;
+#logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper {
- width: 100wv;
- height: 100vh;
- display: flex;
- justify-content: space-evenly;
- align-items: flex-start;
- outline: red;
- padding-top: 10px;
- padding-left: 15px;
+.logo-text {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+  
+.login-box {
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 5px 45px rgba(255, 255, 255, .5);
+    border-radius: 5px;
 }
 
-.wrapper div:nth-child(odd) {
- height: 95vh;
- flex-basis: 35%;
-}
-
-.wrapper div:nth-child(even) {
- height: 40vh;
-}
-
-#box2 form {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
- border-radius: 8px;
- box-shadow: 0 5px 45px rgba(255, 255, 255, .5); 
- flex-direction: column;
-}
-
-.box, form {
- width: 400px;
- background: #CCCCFF;
- height: 250px;
- padding-bottom: 10px;
- border-radius: 5px;
+.login-box form h1 {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 form {
- padding-top: 50px;
- height: 40vh;
+    width: 100%;
+    height: 100%;
 }
 
-input, button {
- width: 300px;
- height: 30px;
- margin: 10px;
- border: 2px solid #fcb045;
- border-radius: 5px;
+.login-box h1 {
+    text-align: center;
+    font-size: 36px;
 }
 
+.input-box {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    position: relative;
+    right: 10px;
 
+    /* background: yellowgreen; */
+}
 
-.sub_text {
- font-size: .8em;
- padding: 0;
- margin: 0;
+.input-box  input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background: #eee;
+    border-radius: 50px;
+    border: none;
+}
+
+.remember-forgot , .register-link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .9em;
+    /* background: plum; */
+    padding: 5px 0;
+}
+
+.register-link {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.register-link p {
+    margin: 0;
+    font-size: .9em;
+}
+
+form center {
+    padding: 10px 0 0;
 }
 
 button {
- width: 45%;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 45%;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    background: lightgreen;
 }
 
-/*------------Profile---------------*/
-.profile-wrapper{
-  width: 96vw;
-  height: 96vh;
-  
+
+/*----------Profile----------------*/
+
+.profile-box {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 90wv;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.table {
+    width: 97%;
+    height: 100%;
+    flex: 55%;
+    border-radius: 10px;
+    outline: thin solid grey;
+    box-shadow: 0 5px 45px rgba(255, 255, 255, .5);
+    background-image: radial-gradient(circle, #318CE7 0%, #6CB4EE 100%);
+}
+
+.profile-box form :nth-child() {
+    border: thin solid black;
+}
+.profile-box .profile-inner2 {
+    width: 97%;
+    height: 100%;
+    flex: 45%;
+    border-radius: 10px;
+    border: black;
+    box-shadow: 0 5px 45px rgba(255, 255, 255, .5);
+    background-image: radial-gradient(circle, #318CE7 0%, #6CB4EE 100%);
+}
+
+.profile-inner2 .inner2-head {
+    width: 99%;
+    height: 20%;
+
+    border-bottom:thin solid grey;
+
+    
+}
+.profile-inner2 .inner2-body {
+    width: 99%;
+    height: 50%;
+    border-bottom: thin solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile-inner2 .inner2-footer {
+    width: 99%;
+    height: 30%;
+    display: flex;
+    /* border: thin solid grey; */
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-direction: row;
+
+}
+
+
+.profile-inner2 .inner2-btn {
+    width: 45%;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.profile-box .inner2-image {
+    width: 200px;
+    height: 200px;
+    background: center / contain no-repeat url('./images/user.png') ;
+
+}
+
+.table th {
+    height: 100px;
+}
+.table h1 {
+    text-align: center
+}
+
+.table td {
+    background-color: whitesmoke;
+}
+.table td:nth-child(odd) {
+    border: thin solid grey;
+    padding-left: 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+.table td:nth-child(even) {
+    border: thin solid grey;
+    border-radius: 0 10px 10px 0;
+}
+
+.table td {
+    width: 40vw;
 }
