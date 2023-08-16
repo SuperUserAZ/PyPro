@@ -1,46 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/main.css">
-</head>
-<body>
-  <header id="head">
-    <section id="logo-box">
-      <span class="logo-text">Ferrum Capital</span>
-    </section>
-  </header>
-  <main>
-    <div class="login-box">
-        <form method="post">
-            <h1>Registration</h1>
-  
-            <div class="input-box">
-                <input type="text" placeholder="  Name" required enabled maxlength="30">
-            </div>
+{% extends 'main/layout.html' %}
 
-            <div class="input-box">
-                <input type="text" placeholder="  Last Name" required enabled maxlength="30">
-            </div>
+{% block title %}
+    Registration Page
+{% endblock %}
 
-            <div class="input-box">
-                <input type="email" placeholder="  E-mail" required enabled maxlength="30">
-            </div>
+{% block bodypage %}
+<div class="login-box">
+  <form method="post">
+      <h1>Registration</h1>
+      {% csrf_token %}
+      <div class="input-box">
+          <input type="text" placeholder="  Name" required enabled maxlength="30">
+      </div>
 
-            <div class="input-box">
-                <input type="password" placeholder="  Password" required enabled maxlength="20">
-            </div>
+      <div class="input-box">
+          <input type="text" placeholder="  Last Name" required enabled maxlength="30">
+      </div>
+      <div class="input-box">
+          <input type="email" placeholder="  E-mail" required enabled maxlength="30">
+      </div>
 
-            <center><button type="submit"><span>SignUp</span></button></center>
+      <div class="input-box">
+          <input type="password" placeholder="  Password" required enabled maxlength="20">
+      </div>
 
-            <div class="register-link">
-                <p>Already have an account?<a href="#" style="text-decoration: none;">Login</a></p>
-            </div>
-        </form>
-    </div>
-  </main>
-</body>
-</html>
+      <center><button type="submit"><span>SignUp</span></button></center>
+
+      <div class="register-link">
+          <p>Already have an account?<a href="{% url 'registration' %}" style="text-decoration: none;">Login</a></p>
+      </div>
+  </form>
+</div>    
+{% endblock %}
