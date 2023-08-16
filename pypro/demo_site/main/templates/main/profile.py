@@ -6,25 +6,68 @@
 
 {% block bodypage %}
 <div class="profile-box">
-  <form action="" method="get">
-      <h1>Profile Information</h1>
-
-      <div class="input-box">
-          <input type="text" required enabled maxlength="30">
-      </div>
-
-      <div class="input-box">
-          <input type="text" required enabled maxlength="30">
-      </div>
-      <div class="input-box">
-          <input type="email" required enabled maxlength="30">
-      </div>
-
-      <div class="input-box">
-          <input type="password" required enabled maxlength="20">
-      </div>
-
-      <center><button type="submit"><span>Save</span></button></center>
-  </form>
-</div>    
+    <form method="get|post">
+        <table class="table inner1">
+            <tbody>
+                <tr>
+                    <th colspan="2">
+                        <h1>Profile Information</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>Job title:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>Department:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>Extension number:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>Personal number:</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td>Outlook:</td>
+                    <td>{{}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="profile-inner2" style="border: thin solid grey;">
+        <div class="inner2-head">
+            <h2>
+                {{}}
+            </h2>
+        </div>
+        <div class="inner2-body">
+            <div class="inner2-image">
+                
+            </div>
+        </div>
+        <div class="inner2-footer">
+            <button class="inner2-btn">
+                <a href="#" style="text-decoration: none;">Написать сообщение</a>
+            </button>
+            <button class="inner2-btn">
+                <a href="#" style="text-decoration: none;">Сохранить</a>
+            </button>
+        </div>
+    </div>
+    </div>  
 {% endblock %}
