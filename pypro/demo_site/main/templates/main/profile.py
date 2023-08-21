@@ -7,6 +7,7 @@
 {% block bodypage %}
 <div class="profile-box">
     <form method="get|post">
+        {% csrf_token %}
         <table class="table inner1">
             <tbody>
                 <tr>
