@@ -7,6 +7,7 @@
 {% block bodypage %}
 <div class="login-box">
     <form method="post">
+        {% csrf_token %}
         <h1>Login</h1>
 
         <div class="input-box">
