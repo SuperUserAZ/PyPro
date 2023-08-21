@@ -17,35 +17,35 @@
                 </tr>
                 <tr>
                     <td>Country:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>City:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>Age:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>Job title:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>Department:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>Extension number:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>Personal number:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
                 <tr>
                     <td>Outlook:</td>
-                    <td>{{}}</td>
+                    <td>----</td>
                 </tr>
             </tbody>
         </table>
@@ -53,7 +53,7 @@
     <div class="profile-inner2" style="border: thin solid grey;">
         <div class="inner2-head">
             <h2>
-                {{}}
+                ----
             </h2>
         </div>
         <div class="inner2-body">
